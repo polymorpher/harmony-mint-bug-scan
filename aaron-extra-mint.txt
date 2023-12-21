@@ -20,4 +20,4 @@ Epoch 1731 block 51085311 balance-diff 4400000000000000000000000
 Epoch 1732 block 51118079 balance-diff 0
 Epoch 1733 block 51150847 balance-diff 0
 Epoch 1734 block 51183615 balance-diff 0
-Total sum 55600000
+Total sum (including legitimate undelegation) 55600000

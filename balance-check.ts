@@ -51,7 +51,7 @@ async function main (): Promise<any> {
     b += 32768
     ep += 1
   }
-  console.log('Total sum', formatBalance(sum))
+  console.log('Total sum (including legitimate undelegation)', formatBalance(sum))
 }
 
 main().catch(console.error)
