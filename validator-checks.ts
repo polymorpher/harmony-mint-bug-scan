@@ -1,18 +1,22 @@
 import axios from 'axios'
+import { calcEpochNumber, formatBalance } from './common'
 
-const base = axios.create({ baseURL: 'https://api.s0.t.hmny.io' })
+const base = axios.create({ baseURL: 'https://a.api.s0.t.hmny.io/' })
 
-const CurrentEpoch: number = Number(process.env.CURRENT_EPOCH ?? 0x6c4)
+const BlockNumber = Number(process.env.BLOCK_NUMBER ?? 51085312)
+const BlockEpoch: number = calcEpochNumber(BlockNumber)
 
 async function checkDelegations (validator: string): Promise<any> {
   const { data: { result: { validator: { delegations } } } } = await base.post('/', {
     jsonrpc: '2.0',
-    method: 'hmyv2_getValidatorInformation',
-    params: [validator],
+    method: 'hmyv2_getValidatorInformationByBlockNumber',
+    params: [validator, BlockNumber],
     id: 1
   })
-  const badDelegations = delegations.filter((d: any) => d.undelegations.filter((e: any) => e.epoch < CurrentEpoch - 7).length >= 1)
-  const recentUndelegations = delegations.filter((d: any) => d.undelegations.filter((e: any) => e.epoch > CurrentEpoch - 7).length >= 1)
+  // use BlockEpoch - 1 because the undelegation payout for BlockEpoch has not been paid, i.e. if undelegation is at 1720, and BlockEpoch is 1727, the payout for the undelegation is paid at the begining of epoch 1728. So "bad" undelegation for BlockEpoch 1727 has to be at most 1719
+  const badDelegations = delegations.filter((d: any) => d.undelegations.filter((e: any) => e.epoch <= (BlockEpoch - 1) - 7).length >= 1)
+  // similarly, recentUndelegations gives us a warning of upcoming bad undelegations. We used this to get an idea ahead of time of any increase in potential damage per day
+  const recentUndelegations = delegations.filter((d: any) => d.undelegations.filter((e: any) => e.epoch > (BlockEpoch - 1) - 7).length >= 1)
   let validatorMintedSum = 0
   let validatorPerEpochAmount = 0
   if (badDelegations.length >= 1) {
@@ -23,13 +27,14 @@ async function checkDelegations (validator: string): Promise<any> {
       let mintedSum = 0
       let perEpochAmount = 0
       for (const u of badDelegation.undelegations as any[]) {
-        const amount = Number(BigInt(u.amount) * BigInt(1e+6) / (BigInt(10) ** BigInt(18))) / 1e+6
+        const amount = formatBalance(BigInt(u.amount))
         perEpochAmount += amount
-        mintedSum += (CurrentEpoch - (Number(u.epoch) + 7)) * amount
+        // for epochs between [Number(u.epoch) + 7, BlockEpoch - 1] inclusive, undelegation payouts were made. However, the first undelegation at `Number(u.epoch) + 7` is a legitimate payout, thus the calculation should subtract one epoch
+        mintedSum += ((BlockEpoch - 1) - (Number(u.epoch) + 7) + 1 - 1) * amount
       }
       validatorPerEpochAmount += perEpochAmount
       validatorMintedSum += mintedSum
-      const since = badDelegation.undelegations.reduce((u1: any, u2: any) => u1.epoch < u2.epoch ? u1.epoch : u2.epoch, CurrentEpoch)
+      const since = badDelegation.undelegations.reduce((u1: any, u2: any) => u1.epoch < u2.epoch ? u1.epoch : u2.epoch, BlockEpoch)
       console.log('Bad delegations from validator', validator, 'amount per epoch', perEpochAmount, 'minted sum', mintedSum, 'since', since, 'bad delegations', JSON.stringify(badDelegation))
     }
     console.log(`Validator ${validator} total minted sum: ${validatorMintedSum} , per epoch amount: ${validatorPerEpochAmount}`)
