@@ -75,3 +75,6 @@ main().catch(console.error)
 
 // Husaria
 // checkDelegations('one1xrtkrcpx7edw40zxpp26up939gc68u8hwepvnx').catch(console.error)
+
+// Sargatxet
+// checkDelegations('one132ggm0mgxdt4l8etud9e5gzpv8psgx30p7hxsq').catch(console.error)
