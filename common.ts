@@ -6,6 +6,13 @@ export const epochLastBlock = (e: number): number => (e - TwoSecondsEpoch + 1) *
 
 const PrecisionFactor: bigint = 100000000n
 
-export const formatBalance = (balance: bigint): number => {
-  return Number(balance * PrecisionFactor / (10n ** 18n)) / Number(PrecisionFactor)
+export const formatBalance = (balance: bigint, precision: bigint = PrecisionFactor): number => {
+  return Number(balance * precision / (10n ** 18n)) / Number(precision)
+}
+
+export const formatUndelegation = (ud: any): string => {
+  return `${formatBalance(BigInt(ud.amount))} @ ${ud.epoch}}`
+}
+export const formatUndelegations = (uds: any[]): string => {
+  return uds.map(ud => formatUndelegation(ud)).join(' | ')
 }
