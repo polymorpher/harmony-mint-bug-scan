@@ -4,6 +4,7 @@ const base = axios.create({ baseURL: 'https://a.api.s0.t.hmny.io/' })
 
 let BlockNumber = Number(process.env.BLOCK_NUMBER ?? 0)
 let BlockNumberHex = BlockNumber ? ('0x' + Number(BlockNumber).toString(16)) : '0x0'
+const HIDE_ZERO_DELEGATION = !!process.env.HIDE_ZERO_DELEGATION
 
 async function getLatestBlockNumber (): Promise<number> {
   const { data: { result } } = await base.post('/', {
@@ -26,7 +27,7 @@ async function checkDelegations20240625 (validator: string): Promise<void> {
   const { validator: { delegations } } = data.result
   const currentEpoch = calcEpochNumber(BlockNumber)
   const badDelegations = delegations.filter((d: any) =>
-    d.amount > 0 &&
+    (!HIDE_ZERO_DELEGATION && d.amount > 0) &&
       d.undelegations.filter((e: any) => e.epoch <= (currentEpoch - 1) - 7).length >= 1
   )
   if (badDelegations.length) {

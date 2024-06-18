@@ -1,0 +1,77 @@
+Validator [one1hwe68yprkhp5sqq5u7sm9uqu8jxz87fd7ffex7] Bad undelegations:
+  - delegator: one1a5j09n5v2l87u8j0l0c9vuj26zaqvsg5spxjdx: delegated amount 0 undelegations: 270 @ 1729}
+Validator [one1nef0c8kgy30delcckf87jaegdp7s7ntrknvajj] Bad undelegations:
+  - delegator: one18kxq78xks47rzjmg3gmpty7shzw0qkq7cljvqs: delegated amount 0 undelegations: 249999.99999999 @ 1739}
+  - delegator: one1a5j09n5v2l87u8j0l0c9vuj26zaqvsg5spxjdx: delegated amount 0 undelegations: 185 @ 1798}
+  - delegator: one10rtvqsznnlyq7zz8jzz5xcyz5psk65wru0dqqu: delegated amount 0 undelegations: 2136.84999999 @ 1834}
+  - delegator: one1ufd65736khuht0wuq849zfe3azn950hvrk7f5e: delegated amount 0 undelegations: 2676.3935915 @ 1927}
+  - delegator: one1ethxltk6j0qfm26r4uv9y8798s87c3rk92kvxf: delegated amount 0 undelegations: 100 @ 1763}
+  - delegator: one147tptvh3n5rv6ks9uj4vs9k06mh5gp7f4uqm5h: delegated amount 1e-14 undelegations: 106.79656199 @ 1839}
+  - delegator: one1wf69nh2u785yje4lecuky8y8gyddvqghcaq3s0: delegated amount 0 undelegations: 5200.223114 @ 1786}
+  - delegator: one1mgppex53cwec7nc77c8h78uqph7m7z2yae0hlk: delegated amount 0 undelegations: 73039.99999999 @ 1832}
+  - delegator: one1gqywkvpp63pv4v6mg2xwdw0szfjtuhq0l6wjy4: delegated amount 0 undelegations: 1000 @ 1853}
+  - delegator: one1ywykj9lyrp4vlz4lrhjq5gc2jlphpysry5ng0e: delegated amount 0 undelegations: 1000 @ 1755}
+  - delegator: one1wsnpaqv9sj5msyx3xqt6dfxlvekh8w7me3yejy: delegated amount 0 undelegations: 2000 @ 1835}
+  - delegator: one1a4sqzz3cycwet8ku8dzvks4j7dxsur8tsqvayz: delegated amount 0 undelegations: 250 @ 1829}
+  - delegator: one1y6x3jqd4d7fxhd2tln0wkag9ea4yw2nvsesuw2: delegated amount 0 undelegations: 371624.38356699 @ 1743}
+  - delegator: one17xpt7cdxmdrxet0zaa4j8njjkkeyz8sjw7gtac: delegated amount 0 undelegations: 2228 @ 1753}
+  - delegator: one13z8j6e44sa40mq5um8fc8s689lx4yhw9junrx0: delegated amount 0 undelegations: 5000 @ 1834}
+  - delegator: one1a4ayp9pake9ch99zudstt83k5s7mh6qn4m08xt: delegated amount 0 undelegations: 20000 @ 1854}
+  - delegator: one12chmpmytpcvefmzjms8vkqhzgcgy42htl6gddf: delegated amount 0 undelegations: 4000 @ 1874}
+  - delegator: one1jvkpkuc9a6653p9srprvglcv8mpl5p7sda592c: delegated amount 0 undelegations: 9990 @ 1788}
+  - delegator: one1wuv73zah0wc448gy5c7h0gsrw8tykt5qzdawsp: delegated amount 0 undelegations: 1685 @ 1935}
+  - delegator: one1mlfg9dg4j5syusxl6srd5gmnmhrr5sv0uzt6k6: delegated amount 0 undelegations: 220 @ 1814}
+  - delegator: one17sauyw6y7evfqhdglvd8gs4gualr8wyqvqa2nj: delegated amount 0 undelegations: 140 @ 1741}
+  - delegator: one1adu7frlm3aglhm4g8t555w9ex424uvtmcc8shn: delegated amount 0 undelegations: 1385.802803 @ 1820}
+  - delegator: one1s8c4kzyuqhascvctr4hk7mcsj2s9u03d4tjh38: delegated amount 0 undelegations: 2510.08137699 @ 1763}
+  - delegator: one1tx5s7frm34phv30d5hzdq9x69f57eacp2ep23n: delegated amount 0 undelegations: 4140 @ 1751}
+  - delegator: one1208thxva2n6s587s74c8pndy8la3n2ggc50ctk: delegated amount 0 undelegations: 16499.99999999 @ 1844}
+  - delegator: one1l6xheeajjkhq3mljwlnx9a0dtzradpve5dtxza: delegated amount 0 undelegations: 5724.20016304 @ 1814}
+  - delegator: one1rwadddvm85mgahspzt6qeesszn204qgnt2fzy2: delegated amount 0 undelegations: 3.3062293 @ 1754}
+  - delegator: one1u69cgqz9k4ne50lpw8znlc9s9zl89ewj9nravy: delegated amount 0 undelegations: 1050 @ 1834}
+  - delegator: one1v8cdt37s6cpq89ugjan4gcfw9w9ey4ew2f3yml: delegated amount 0 undelegations: 2104.37786899 @ 1933}
+  - delegator: one1p4gdpwk345nj7p38dkea3ll4r8g6ld9jtnf3zm: delegated amount 0 undelegations: 5455.81141 @ 1834}
+  - delegator: one1ga22lvrm0ds75vz4yyegsk6mf624uagxs27fxd: delegated amount 0 undelegations: 58772 @ 1726}
+  - delegator: one1tumlhxtwnfwqq5utmljkwagwy26595j243yqah: delegated amount 0 undelegations: 5000 @ 1868}
+  - delegator: one1ztz5yavcvt5d5g8q245vk9ua6fpkee9uhavaal: delegated amount 0 undelegations: 40 @ 1727}
+  - delegator: one1n9fevsqppr4p79dnawg3rfhcxqajsj2mky36m6: delegated amount 0 undelegations: 35040 @ 1828}
+  - delegator: one1psf5hjvssm3rmfcunuggzrcntsr7r8h45x0cgz: delegated amount 0 undelegations: 500 @ 1768}
+  - delegator: one14vvxqmlsks0vv4pt28tjz0uq2m6pnjtphhxapu: delegated amount 0 undelegations: 100 @ 1741}
+  - delegator: one1pc8lw44yqg3kv3llgwtj7mwm33h45glxx08tyn: delegated amount 0 undelegations: 1720 @ 1840}
+Validator [one1aagrkq9vg49jm5xx22fvm4leg0lt48qeupexvu] Bad undelegations:
+  - delegator: one18xk6n545lz7599dh048f4plh2lw59778c9hwed: delegated amount 0 undelegations: 499999.99999999 @ 1862}
+  - delegator: one176f0hzxjtdgpd09uq9z6dydyeu2fk6uzy6n5xf: delegated amount 0 undelegations: 146260.15699999 @ 1823}
+  - delegator: one1v2j7pjt8nz38l30al5md5uk53vn5kc7h5rmp2e: delegated amount 0 undelegations: 3844.99999999 @ 1733}
+  - delegator: one1yvwarcz85j0grhkh2wjykjafq2zdlmx4ludjka: delegated amount 1e-13 undelegations: 1148.54929999 @ 1741}
+  - delegator: one1e2jn35pcqugxr5dq7n5fezs6tjgrfz9zwu5gz6: delegated amount 0 undelegations: 5100 @ 1728}
+  - delegator: one1m8r78g8yqg8az08cqycxwxrq5dwefxlfaxtdfw: delegated amount 0 undelegations: 283.36360999 @ 1751}
+  - delegator: one1gsmuhaekysl2d82nz5q2f5d6220v6y9cw6gytk: delegated amount 0 undelegations: 9369.6942144 @ 1726}
+  - delegator: one125rj97ha6yrvvf0c6wh02p347w2evqldh4ad8e: delegated amount 0 undelegations: 53749.99999999 @ 1903}
+  - delegator: one1hx34aanghqkkjjl82utp56xdvgr9ekjzdxk457: delegated amount 0 undelegations: 55499.99999999 @ 1821}
+  - delegator: one1553tu35j289yedaevum8jhuvx92e9y26y4l0zc: delegated amount 0 undelegations: 18843.36158599 @ 1825}
+  - delegator: one1ld37zr3n7yw3mlu2nm0jdgmmtad0vaj90j2tpn: delegated amount 0 undelegations: 2200 @ 1834}
+  - delegator: one1jm3awyne2ax0hdysvzqslltv05xuyycg7e3zqy: delegated amount 0 undelegations: 500 @ 1829}
+  - delegator: one1t4wslvkr8wrl7xstyjm7t0ynl74z488qsrmjww: delegated amount 0 undelegations: 2500 @ 1826}
+Validator [one1j35d0vd4uzwffeawjjfukn8t9wjt8csungj0z0] Bad undelegations:
+  - delegator: one1uup6ymmkh48qqdgyf23c67pw9qj4k5al6u097h: delegated amount 0 undelegations: 1000 @ 1843}
+  - delegator: one1x0qwjc636n46msta0k4gq5ng88sjx4qf4687yp: delegated amount 0 undelegations: 500 @ 1954}
+  - delegator: one1agds2fajnv0e5ud7j308x7qqcggpn3z2nsy2my: delegated amount 0 undelegations: 122 @ 1728}
+  - delegator: one193kpr8rg47yxl0auvlekk5gp3a3p93ksz0rc62: delegated amount 0 undelegations: 173.77 @ 1841}
+  - delegator: one1gewm5a9qvlj2t0jwhndzv9jlzaum6xz6kl6qxu: delegated amount 0 undelegations: 12499.99999999 @ 1838}
+  - delegator: one1tq8q4znc4le7q2ar7a5z6qc6mf3dt4kqk5ecp6: delegated amount 0 undelegations: 11320 @ 1848}
+  - delegator: one1s6glxvmqgjdqu83q7hg76s3zddjy7rhh3nfjne: delegated amount 0 undelegations: 45899.99999999 @ 1819}
+Validator [one1nmdgnvhntuyjvaegvpm0kstskr3s7aeradt6du] Bad undelegations:
+  - delegator: one1u7cma6rsmfgasslzjpv8d8p0q3xqrrld5ufn0e: delegated amount 0 undelegations: 6000 @ 1903}
+  - delegator: one1xk4qcz4p3vr7tc4wt4zkvcvp0v65cqaae8yq7d: delegated amount 0 undelegations: 2000 @ 1910}
+  - delegator: one1kuyv3uw7en8fxx3zakl4ujqfxa2898zttrecfc: delegated amount 0 undelegations: 100 @ 1885}
+  - delegator: one1jzxnu34mlyxkx4nt6rtt5h8ulpklg8decv8qvn: delegated amount 0 undelegations: 800 @ 1778}
+Validator [one1rs6ts6dsk4z7utvlyekjj28r9j8wyzf24ggr62] Bad undelegations:
+  - delegator: one10m95psw9dyx7pfu9zj3ewxvknrsqxd9snn5phs: delegated amount 0 undelegations: 150 @ 1725}
+  - delegator: one1k0jaxjwxnd6pus95tlzlflfvedy2mh4jjzry9m: delegated amount 0 undelegations: 1470 @ 1934}
+Validator [one1dgn6cnhueyg0vqvq6g84hljwvl0nruwlt4huhy] Bad undelegations:
+  - delegator: one1fvvceuv6lzd0574858ct6w7qv6lp6g4x675zg0: delegated amount 4 undelegations: 26978350 @ 1958}
+  - delegator: one14sl2t4k73pfdy0qx0g8fqxcmykn683y59vhnez: delegated amount 101 undelegations: 25550.99999999 @ 1831}
+  - delegator: one1gv4jccqv4828wnghsydsq3nh085wv9q7kfkskj: delegated amount 0 undelegations: 3168.99999999 @ 1872}
+  - delegator: one17w45wpft76649pptzjfc0g6mxhxa8r8kp23yzn: delegated amount 0 undelegations: 20000 @ 1826}
+  - delegator: one1ugvtdxau0mmd38wt42na9la9melp84alnfkyx4: delegated amount 0 undelegations: 9500 @ 1929}
+  - delegator: one1xg9xzwpeh69w7mtn9lufuzphp0vds93q63949t: delegated amount 0 undelegations: 356128.36954199 @ 1952}
